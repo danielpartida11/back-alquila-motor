@@ -1,0 +1,23 @@
+Nombre:
+
+    3726815_alquilamotor
+
+Usuario:
+
+    3726815_alquilamotor
+
+Contraseña:
+
+    @f#O[.iF8G!mwia}
+
+Alojamiento:
+
+    fdb30.atspace.me
+
+Puerto:
+
+    3306
+
+Administración:
+
+    https://supportindeed.com/phpMyAdmin4/index.php?db=3726815_alquilamotor&lang=es&collation_connection=utf8mb4_unicode_ci&token=8b94fedd74c0615936deeecc7384cea6
