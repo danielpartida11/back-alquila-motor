@@ -27,4 +27,20 @@ router.post('/register',[
     res.json(user);
 });
 
+router.post('/login', async (req, res) => {
+    const user = await User.findOne({ where: { email: req.body.email }}); //Login para verificar un usuario registrado
+
+    if(user){
+        const iguales = bcrypt.compareSync(req.body.password, user.password);
+
+        if(iguales) {
+            res.json({ succes: 'TOKEN' });
+        }else{
+            res.json({ error: 'Error en usuario y/o contraseña'}); //Si no coincide ninguna creedencial, salta este error
+        }
+    }else {
+        res.json({ error: 'Error en usuario y/o contraseña'}); //Si no coincide ninguna creedencial, salta este error
+    }
+})
+
 module.exports = router;
