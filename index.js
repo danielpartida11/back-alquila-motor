@@ -3,6 +3,8 @@ const bodyParser = require('body-parser'); //Requiero body-parser para poder ges
 
 const app = express(); //Creo la aplicación de express
 
+require('./db'); //Requiero el archivo de la base de datos
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

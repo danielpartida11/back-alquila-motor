@@ -13,3 +13,6 @@ module.exports = (sequelize, type) => {
         prize: type.INTEGER
     })
 }
+
+//Este es el modelo de car con los campos id, name, model, fuel, km, tank y prize de un car. Usando la propiedad type, le decimos que tipo
+//de dato va a almacenar en ese campo
