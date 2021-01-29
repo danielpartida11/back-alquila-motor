@@ -10,7 +10,7 @@ Contraseña:
 
     @f#O[.iF8G!mwia}
 
-Alojamiento:
+Alojamiento/Hosting:
 
     fdb30.atspace.me
 
