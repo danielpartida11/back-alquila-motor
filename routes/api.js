@@ -4,6 +4,6 @@ const apiCarsRouter = require('./api/cars'); //Me traigo el archivo cars
 const apiUsersRouter = require('./api/users');
 
 router.use('/cars', apiCarsRouter);
-router.use('users', apiUsersRouter);
+router.use('/users', apiUsersRouter);
 
 module.exports = router; //Y lo exporto
