@@ -18,10 +18,7 @@ sequelize.sync({ force: false})
     })
 
 module.exports = {
-    Car //Archivo exportado
-}
-
-module.exports = {
+    Car,
     User //Archivo exportado
 }
 
