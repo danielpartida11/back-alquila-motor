@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize'); //Me traigo la librería Sequelize para poder trabajar con ella
 
 const CarModel = require('./models/cars'); //Me traigo el modelo creado para que lo cargue en la base de datos
+const UserModel = require('./models/users'); //Me traigo el modelo creado para que lo cargue en la base de datos
 
 const sequelize = new Sequelize('alquilamotor', 'root', '', {
     host: 'localhost',
@@ -9,6 +10,7 @@ const sequelize = new Sequelize('alquilamotor', 'root', '', {
 });
 
 const Car = CarModel(sequelize, Sequelize); //Con esto ya tengo el modelo car para sincronizar con mi base de datos
+const User = UserModel(sequelize, Sequelize); //Con esto ya tengo el modelo user para sincronizar con mi base de datos
 
 sequelize.sync({ force: false})
     .then(() => {
@@ -17,6 +19,10 @@ sequelize.sync({ force: false})
 
 module.exports = {
     Car //Archivo exportado
+}
+
+module.exports = {
+    User //Archivo exportado
 }
 
 
