@@ -3,6 +3,7 @@ const router = require('express').Router(); //Me traigo el router
 const { Car } = require('../../db'); //Requiero el objeto car
 
 router.get('/', async (req, res) => {
+    console.log(req.usuarioId);
     const cars = await Car.findAll(); //Me carga TODOS los coches
     res.json(cars);
 });
